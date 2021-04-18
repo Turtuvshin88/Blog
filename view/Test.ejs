@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<body class="container">
+    <header class="header">
+        
+      <a href="/" class="header__logo">
+        NBA
+      </a>
+
+      <nav class="header__nav">
+        <ul class="nav__sidenav nav--right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Pages</a></li>
+          <a href="/login" class="button">Login</a>
+          <li><a href="#" id="nav-bag"><img src="https://res.cloudinary.com/dmoo9az8w/image/upload/v1475715814/shopping_bag_cuw7pb.svg" alt="shopping" /></a></li>
+        </ul>
+      </nav>
+      <link rel="stylesheet" href="css/test.css" /> 
+     
+        
+    </header>
+
+    <main class="main">
+
+      <section class="home-page-featured stamp">
+        <!-- First Article -->
+        <article class="post post-featured">
+          <div class="post-card">
+            <a href="#" class="post__top-image">
+
+                <img src="https://larrybrownsports.com/wp-content/uploads/2020/08/nba-logo.jpg" width="500" height="500" alt="NBA үүсэл хөгжлийн тухай тун сонирхолтой Блогууд" />
+
+            </a>
+            <h6 class="post-date">NBA NEWS 09/03/2021 07:42</h6>
+            <div class="post__text">    
+              <h3 class="post-category">NBA</h3>
+              <h1 class="post-title">
+                <a href="#">NBA </a>
+              </h1>
+              <p class="excerpt">NBA үүсэл хөгжлийн тухай тун сонирхолтой Блогууд.</p>
+              <p class="post-link-more"><a href="#">MORE</a></p>
+            </div>
+          </div>
+        </article>
+        <div class="home-page-featured-column">
+          <% for(var i = users.length-1; i >=0; i--) { %> 
+          <article class="post"><%= users[i].id %>
+            <div class="post-card">
+              <a href="#" class="post__top-image">
+                <figure>
+                  <img src="css/images/<%= users[i].picture %>" width="500px" height="500px"/>
+                </figure>
+              </a>
+              <h6 class="post-date"></h6><%= users[i].about %>
+              <div class="post__text"><%= users[i].title %>
+                <h3 class="post-category"></h3>
+                <h1 class="post-title"><%= users[i].date %>
+                  <a href="#"></a>
+                </h1>
+                <p class="excerpt"></p>
+                <a href="/singlePost/<%= users[i].id %>" class="btn read-more">Read More</a>
+              </div>
+            </div>
+          </article>
+          <% } %>
+
+         
+
+
+     
+
+
+      
+
+  </body>
+
+
+</html>

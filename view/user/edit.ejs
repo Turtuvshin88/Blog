@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login Form Tutorial</title>
+        <link rel="stylesheet" href="/routes/edit-user.js" />
+		<link href="/css/edit.css" rel="stylesheet" />
+		
+	</head>
+	
+	<body background="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-wood-bb-9.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=fedd02cc0e519d652a8f41520434ac06">
+		
+		<div class="login-form">
+			<h1>User Edit</h1>
+			<form action="/edit/<%= user.id %>" method="POST">
+				<input type="text" name="username" placeholder="Username"  value="<%= user.username %>"   required>
+				<input type="password" name="password" placeholder="Password" value="<%= user.password %>" required>
+                <input type="email" name="email" placeholder="Email"  value="<%= user.email %>" required>
+				<input type="submit" class="button" value="Update">  
+			</form>
+			
+		</div>
+	</body>
+</html>

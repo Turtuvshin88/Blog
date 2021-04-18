@@ -1,0 +1,62 @@
+<header class="header">
+        
+    <a href="/" class="header__logo">
+      NBA
+    </a>
+
+    <nav class="header__nav">
+      <ul class="nav__sidenav nav--right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pages</a></li>
+        <a href="/login" class="button">Login</a>
+        <li><a href="#" id="nav-bag"><img src="https://res.cloudinary.com/dmoo9az8w/image/upload/v1475715814/shopping_bag_cuw7pb.svg" alt="shopping" /></a></li>
+      </ul>
+    </nav>
+    <link rel="stylesheet" href="/css/singlePost.css" /> 
+   
+      
+  </header>
+<body background ="/css/images/background.jpg">
+    <!--Page Wrapper-->
+    <div class="post-card">
+      <a href="#" class="post__top-image">
+       
+      </a>
+      <h6 class="post-date"></h6>
+      <div class="post__text">
+        <h3 class="post-category"></h3>
+        <h1 class="post-title">
+        <!--Content-->
+        <div class="post-card">
+            
+        <!--Main Content-->
+            <div class="main-content single">
+                <h1 class="post-title"><%= users.title %></h1>
+            <div class="post-content">
+                <img src="/css/images/<%= users.picture %>" width="500px" height="500px"/>
+                <p><%= users.about %></p>
+            </div>    
+            </div>
+        <!--//Main Content-->
+
+        <!--Sidebar-->
+            <div class="sidebar single">
+
+                <div class="section topics">
+                
+                </div>
+            </div>
+        <!--//Sidebar-->
+        </div>
+        <!--//Content-->
+    </div>
+
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!--Slick-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--JS-->
+</body>
+</html>
